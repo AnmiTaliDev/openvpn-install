@@ -33,6 +33,10 @@ elif [[ -e /etc/fedora-release ]]; then
 	os="fedora"
 	os_version=$(grep -oE '[0-9]+' /etc/fedora-release | head -1)
 	group_name="nobody"
+ elif [[ -e /etc/debian_version ]]; then
+	os="debian"
+	os_version=$(grep -oE '[0-9]+' /etc/debian_version | head -1)
+	group_name="nogroup"
 else
 	echo "This installer seems to be running on an unsupported distribution.
 Supported distros are Ubuntu, Debian, AlmaLinux, Rocky Linux, CentOS and Fedora."
