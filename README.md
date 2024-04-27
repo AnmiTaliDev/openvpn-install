@@ -10,3 +10,10 @@ In the upcoming update, we want to add GUI and new CLI commands
 1. Nyr
 2. taliildar (Ildar Mustafin)
 3. OpenVPN
+## System requirements
+### Debian
+Version above 11. The lower one won't do. We recommend starting from 1 GB of RAM.
+### CentOS/Other RHEL-like system 
+The version above 9. Below will not work. We recommend starting from 1 GB of RAM.
+### Ubuntu 
+Version above 22. The lower one won't do. We recommend from 1.5 GB of RAM.
